@@ -47,7 +47,7 @@ function remainingTime() {
       svgContainer1.style.right = `${Math.floor(Math.random() * 30)}%`;
       svgContainer2.style.left = `${Math.floor(Math.random() * 80)}%`;
       svgContainer2.style.top = `${Math.floor(Math.random() * 50)}%`;
-    }, 2500);
+    }, 2350);
   }
 }
 const countDown = setInterval(remainingTime, 1000);
