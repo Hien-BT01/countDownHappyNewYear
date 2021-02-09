@@ -1,0 +1,49 @@
+.countdown-title{
+    font-size: 8rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    margin-bottom: 6rem;
+    position:absolute;
+    top:40%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    animation: leftToRight 6s linear forwards infinite;
+    word-spacing: 10rem;
+    background: linear-gradient(to left, #159957, #155799);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: -1;
+}
+.countdown{
+    background: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    h2{
+        font-size: 6rem;
+        font-weight: 700;
+    }
+    span{
+        font-size: 2.4rem;
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &:not(:last-of-type){
+        margin-right: 6rem;
+    }
+}
+@keyframes leftToRight{
+    from{
+        filter: hue-rotate(0deg);
+        left:140%
+    }
+    to{
+        filter: hue-rotate(360deg);
+        left:-50%;
+    }
+}
