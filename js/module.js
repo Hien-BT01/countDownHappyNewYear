@@ -3,8 +3,7 @@ const svgContainer = document.querySelector("#svg");
 const svgContainer1 = document.querySelector("#svg1");
 const svgContainer2 = document.querySelector("#svg2")
 const newYear = document.querySelector(".newyear");
-const audioPlay = document.querySelector("audio");
-console.log(audioPlay)
+const audio = document.querySelector("audio");
 function remainingTime() {
   const today = new Date().getTime();
   const timeleft = futureDay - today;
@@ -26,8 +25,9 @@ function remainingTime() {
   times.forEach((time, index) => {
     time.innerHTML = format(values[index]);
   });
-  if (timeleft < 0) {
-    audioPlay.play();
+  if (timeleft <= 0) {
+    audio.muted = false;
+    audio.play();
     times.forEach(time => {
         time.innerHTML = "00";
     })
