@@ -27,10 +27,10 @@ function remainingTime() {
     time.innerHTML = format(values[index]);
   });
   if (timeleft < 0) {
+    audioPlay.play();
     times.forEach(time => {
         time.innerHTML = "00";
     })
-    audioPlay.play();
     clearInterval(countDown);
     const countDownTitle = document.createElement("h2");
     const textNode = document.createTextNode("Happy New Year");

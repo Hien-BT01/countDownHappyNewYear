@@ -169,3 +169,228 @@ body {
   height: 100%;
   pointer-events: none;
 }
+
+@media screen and (max-width: 991px) {
+  .countdown-title {
+    font-size: 6rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 6rem;
+  }
+
+  .countdown {
+    margin-right: 4.5rem !important;
+  }
+  .countdown h2 {
+    font-size: 5rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .countdown-title {
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 6rem;
+  }
+
+  .countdown {
+    margin-right: 3.5rem !important;
+  }
+  .countdown h2 {
+    font-size: 4rem;
+  }
+
+  .countdown-title {
+    font-size: 5rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 4rem;
+  }
+
+  .countdown {
+    margin-right: 3.5rem !important;
+  }
+  .countdown h2 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .countdown-title {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 6rem;
+  }
+
+  .countdown {
+    margin-right: 2.5rem !important;
+  }
+  .countdown h2 {
+    font-size: 3rem;
+  }
+
+  .countdown-title {
+    font-size: 4rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 4rem;
+  }
+
+  .countdown {
+    margin-right: 2.5rem !important;
+  }
+  .countdown h2 {
+    font-size: 3rem;
+  }
+
+  .countdown-title {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 3rem;
+  }
+
+  .countdown {
+    margin-right: 2.5rem !important;
+    padding: 1rem 2rem;
+  }
+  .countdown h2 {
+    font-size: 3rem;
+  }
+  .countdown span {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 456px) {
+  .countdown-title {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 6rem;
+  }
+
+  .countdown {
+    margin-right: 2rem !important;
+  }
+  .countdown h2 {
+    font-size: 2.5rem;
+  }
+
+  .countdown-title {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 4rem;
+  }
+
+  .countdown {
+    margin-right: 2rem !important;
+  }
+  .countdown h2 {
+    font-size: 2.5rem;
+  }
+
+  .countdown-title {
+    font-size: 3rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 3rem;
+  }
+
+  .countdown {
+    margin-right: 2rem !important;
+    padding: 1rem 2rem;
+  }
+  .countdown h2 {
+    font-size: 2.5rem;
+  }
+  .countdown span {
+    font-size: 1.8rem;
+  }
+
+  .countdown-title {
+    font-size: 3rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 2rem;
+  }
+
+  .countdown {
+    margin-right: 2rem !important;
+    padding: 1rem 2rem;
+  }
+  .countdown h2 {
+    font-size: 2.5rem;
+  }
+  .countdown span {
+    font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 378px) {
+  .countdown-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 6rem;
+  }
+
+  .countdown {
+    margin-right: 1.6rem !important;
+  }
+  .countdown h2 {
+    font-size: 2.2rem;
+  }
+
+  .countdown-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 4rem;
+  }
+
+  .countdown {
+    margin-right: 1.6rem !important;
+  }
+  .countdown h2 {
+    font-size: 2.2rem;
+  }
+
+  .countdown-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.3rem;
+    word-spacing: 3rem;
+  }
+
+  .countdown {
+    margin-right: 1.6rem !important;
+    padding: 1rem 2rem;
+  }
+  .countdown h2 {
+    font-size: 2.2rem;
+  }
+  .countdown span {
+    font-size: 1.8rem;
+  }
+
+  .countdown-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 2rem;
+  }
+
+  .countdown {
+    margin-right: 1.6rem !important;
+    padding: 1rem 2rem;
+  }
+  .countdown h2 {
+    font-size: 2.2rem;
+  }
+  .countdown span {
+    font-size: 1.8rem;
+  }
+
+  .countdown-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.4rem;
+    word-spacing: 1.2rem;
+  }
+
+  .countdown {
+    margin-right: 0 !important;
+    padding: 0.8rem 1.5rem;
+  }
+  .countdown h2 {
+    font-size: 2.2rem;
+  }
+  .countdown span {
+    font-size: 1.5rem;
+  }
+}

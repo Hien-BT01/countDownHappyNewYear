@@ -1,12 +1,13 @@
 const gulp = require("gulp");
-const minify = require("gulp-uglify");
-const sass = require("gulp-dart-sass");
-const concat = require("gulp-concat");
 const optimizeImage = require("gulp-imagemin");
 
-
+gulp.task("minify",function(){
+    return gulp.src("./js/*.js")
+        .pipe(minifyJs())   
+        .pipe(gulp.dest("dist/script"));
+})
 gulp.task("minifyImage",function(){
-    return gulp.src("image/*jpg")
+    return gulp.src("image/*.jpg")
         .pipe(optimizeImage())
-        .pipe(gulp.dest("opitimizeImg"));
+        .pipe(gulp.dest("Hello"));
 })

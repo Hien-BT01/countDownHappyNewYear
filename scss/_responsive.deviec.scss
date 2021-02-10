@@ -1,0 +1,17 @@
+@import "./responsive.item.scss";
+@media screen and (max-width:991px){
+    @include title(6rem,991px,5rem,4.5rem);
+
+}
+@media screen and (max-width:767px){
+    @include title(5rem,767px,4rem,3.5rem);
+}
+@media screen and (max-width:576px){
+    @include title(4rem,576px,3rem,2.5rem);
+}
+@media screen and (max-width:456px){
+    @include title(3rem,456px,2.5rem,2rem);
+}
+@media screen and (max-width:378px){
+    @include title(2.5rem,378px,2.2rem,1.6rem);
+}

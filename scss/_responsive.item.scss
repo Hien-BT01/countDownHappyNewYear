@@ -1,0 +1,80 @@
+@mixin title($size,$width,$timeValues,$marginValue,$unitsValue: 2.4rem,){
+    @if $width <= 991px{
+        .countdown-title{
+            font-size:$size;
+            letter-spacing: 0.4rem;
+            word-spacing: 6rem;
+        }
+        .countdown{
+            margin-right: $marginValue !important;
+            h2{
+                font-size: $timeValues;
+            }
+        }
+    }
+    @if $width <= 767px{
+        .countdown-title{
+            font-size: $size;
+            letter-spacing: 0.4rem;
+            word-spacing: 4rem;
+        }
+        .countdown{
+            margin-right: $marginValue !important;
+            h2{
+                font-size: $timeValues;
+            }
+        }
+    }
+    @if $width <= 576px{
+        .countdown-title{
+            font-size: $size;
+            letter-spacing: 0.3rem;
+            word-spacing: 3rem;
+        }
+        .countdown{
+            margin-right: $marginValue !important;
+            padding: 1rem 2rem;
+            h2{
+                font-size: $timeValues;
+            }
+            span{
+                font-size: 1.8rem;
+            }
+        }
+
+    }
+    @if $width <= 456px{
+        .countdown-title{
+            font-size: $size;
+            letter-spacing: 0.4rem;
+            word-spacing: 2rem;
+        }
+        .countdown{
+            margin-right: $marginValue !important;
+            padding: 1rem 2rem;
+            h2{
+                font-size: $timeValues;
+            }
+            span{
+                font-size: 1.8rem;
+            }
+        }
+    }
+    @if $width <= 378px{
+        .countdown-title{
+            font-size: $size;
+            letter-spacing: 0.4rem;
+            word-spacing: 1.2rem;
+        }
+        .countdown{
+            margin-right: 0 !important;
+            padding: 0.8rem 1.5rem;
+            h2{
+                font-size: $timeValues;
+            }
+            span{
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
