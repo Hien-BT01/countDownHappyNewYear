@@ -74,3 +74,7 @@ const fireworkAnimation = bodymovin.loadAnimation({
   path:"https://assets7.lottiefiles.com/datafiles/068H91NVUJLGN4p/data.json",
 })
 
+window.onload = function(){
+  audio.muted = true;
+  audio.play();
+}
