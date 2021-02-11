@@ -1,11 +1,12 @@
 import { futureDay, times } from "./variable.js";
 const svgContainer = document.querySelector("#svg");
 const svgContainer1 = document.querySelector("#svg1");
-const svgContainer2 = document.querySelector("#svg2")
+const svgContainer2 = document.querySelector("#svg2");
+const svgContainer3 = document.querySelector("#svg3");
 const newYear = document.querySelector(".newyear");
 let audioE = document.querySelector("audio");
 const playButton = document.querySelector(".play-music")
-const pauseButton = document.querySelector(".pause-music")
+
 console.log(playButton)
 function remainingTime() {
   const today = new Date().getTime();
@@ -30,7 +31,6 @@ function remainingTime() {
   });
   if (timeleft <= 0) {
     playButton.classList.add("appear");
-    pauseButton.classList.add("appear");
     times.forEach(time => {
         time.innerHTML = "00";
     })
@@ -40,17 +40,26 @@ function remainingTime() {
     countDownTitle.appendChild(textNode)
     countDownTitle.classList.add("countdown-title");
     newYear.appendChild(countDownTitle)
-    setInterval(animItem.goToAndPlay(0, true), 2350);
+    setInterval(animItem.goToAndPlay(0, true), 2500);
     setInterval(newAnimeItem.goToAndPlay(0, true), 2950);
-    setInterval(fireworkAnimation.goToAndPlay(0,true),2500);
+    setInterval(fireWorkAnimation.goToAndPlay(0,true),2500);
+    setInterval(fireWorkAnimation2.goToAndPlay(0,true),2450)
     setInterval(() => {
       svgContainer.style.top = `${Math.floor(Math.random() * 20)}%`;
       svgContainer.style.left = `${Math.floor(Math.random() * 50)}%`;
-      svgContainer1.style.top = `${Math.floor(Math.random() * 20)}%`;
-      svgContainer1.style.right = `${Math.floor(Math.random() * 50)}%`;
-      svgContainer2.style.left = `${Math.floor(Math.random() * 80)}%`;
-      svgContainer2.style.top = `${Math.floor(Math.random() * 2020)}%`;
-    }, 2350);
+    }, 2500);
+    setInterval(() => {
+        svgContainer2.style.left = `${Math.floor(Math.random() * 80)}%`;
+        svgContainer2.style.top = `${Math.floor(Math.random() * 20)}%`;
+    },2500)
+    setInterval(() => {
+        svgContainer1.style.top = `${Math.floor(Math.random() * 20)}%`;
+        svgContainer1.style.right = `${Math.floor(Math.random() * 50)}%`;
+    },2950)
+    setInterval(() => {
+        svgContainer3.style.top = `-${Math.floor(Math.random() * 50)}%`;
+        svgContainer3.style.right = `${Math.floor(Math.random() * 70)}%`;
+    },2450)
   }
 }
 const countDown = setInterval(remainingTime, 1000);
@@ -69,16 +78,23 @@ const newAnimeItem = bodymovin.loadAnimation({
   autoplay: false,
   path: "https://assets4.lottiefiles.com/datafiles/Tj3Hd1X74Once2j/data.json",
 });
-const fireworkAnimation = bodymovin.loadAnimation({
+const fireWorkAnimation = bodymovin.loadAnimation({
   wrapper:svgContainer2,
   animType: "svg",
   loop: true,
   autoplay: false,
   path:"https://assets7.lottiefiles.com/datafiles/068H91NVUJLGN4p/data.json",
 })
+const fireWorkAnimation2 = bodymovin.loadAnimation({
+  wrapper:svgContainer3,
+  animType: "svg",
+  loop: true,
+  autoplay: false,
+  speed:2,
+  path:"https://assets1.lottiefiles.com/packages/lf20_y0bI2D.json",
+})
 playButton.addEventListener("click",e => {
   audioE.play();
+  playButton.classList.remove("appear")
 })
-pauseButton.addEventListener("click",e => {
-  audioE.pause();
-})
+

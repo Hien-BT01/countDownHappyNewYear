@@ -162,9 +162,6 @@ audio {
   text-align: center;
   opacity: 0;
 }
-.button-container button:hover {
-  opacity: 0.8;
-}
 .button-container .play-music {
   margin-right: 2rem;
 }
